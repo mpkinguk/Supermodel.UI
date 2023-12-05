@@ -1,7 +1,6 @@
 using Supermodel.UI.Model;
 using System.Diagnostics;
 using System.Linq;
-using System.Collections.Generic;
 using System.Xml.Serialization;
 
 namespace Supermodel.UI
@@ -239,17 +238,24 @@ namespace Supermodel.UI
                     games = serializer.Deserialize(reader) as Games;
                 }
 
-                var game = games?.GameList.Where<Game>(x => _romToRun.Contains(x.Name)).FirstOrDefault();
+                if (games is null)
+                {
+                    throw new Exception("Could not load games from xml file");
+                }
+
+                var rom = _romToRun.Replace(".zip", "");
+               
+                var game = games.GameList.Where(x => x.Name.Contains(rom) || x.Parent.Contains(rom)).FirstOrDefault();
 
                 if (game != null)
                 {
                     var gameInfo = $"Title:{game.Identity.Title}\nManufacturer:{game.Identity.Manufacturer}" +
                         $"\nYear:{game.Identity.Year}\nVersion:{game.Identity.Version}";
 
-                    return gameInfo == null ? "" : gameInfo;
+                    return gameInfo;
                 }
 
-                return string.Empty;
+                return "Could not retrieve rom information";
 
             }
             catch (Exception ex)
