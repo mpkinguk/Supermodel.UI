@@ -51,7 +51,6 @@
             // 
             splitContainer1.Dock = DockStyle.Fill;
             splitContainer1.Location = new Point(0, 0);
-            splitContainer1.Margin = new Padding(4, 5, 4, 5);
             splitContainer1.Name = "splitContainer1";
             // 
             // splitContainer1.Panel1
@@ -71,9 +70,8 @@
             splitContainer1.Panel2.Controls.Add(comboBoxResolution);
             splitContainer1.Panel2.Controls.Add(labelResolution);
             splitContainer1.Panel2.Controls.Add(buttonRunRom);
-            splitContainer1.Size = new Size(861, 739);
-            splitContainer1.SplitterDistance = 283;
-            splitContainer1.SplitterWidth = 6;
+            splitContainer1.Size = new Size(607, 454);
+            splitContainer1.SplitterDistance = 199;
             splitContainer1.TabIndex = 2;
             // 
             // listView1
@@ -82,9 +80,8 @@
             listView1.Dock = DockStyle.Fill;
             listView1.FullRowSelect = true;
             listView1.Location = new Point(0, 0);
-            listView1.Margin = new Padding(4, 5, 4, 5);
             listView1.Name = "listView1";
-            listView1.Size = new Size(283, 739);
+            listView1.Size = new Size(199, 454);
             listView1.TabIndex = 0;
             listView1.UseCompatibleStateImageBehavior = false;
             listView1.View = View.Details;
@@ -95,9 +92,11 @@
             // 
             // buttonBrowseAppPath
             // 
-            buttonBrowseAppPath.Location = new Point(411, 55);
+            buttonBrowseAppPath.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            buttonBrowseAppPath.Location = new Point(291, 33);
+            buttonBrowseAppPath.Margin = new Padding(2, 2, 2, 2);
             buttonBrowseAppPath.Name = "buttonBrowseAppPath";
-            buttonBrowseAppPath.Size = new Size(124, 34);
+            buttonBrowseAppPath.Size = new Size(87, 25);
             buttonBrowseAppPath.TabIndex = 1;
             buttonBrowseAppPath.Text = "App Path...";
             buttonBrowseAppPath.UseVisualStyleBackColor = true;
@@ -106,19 +105,17 @@
             // textBoxAppPath
             // 
             textBoxAppPath.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            textBoxAppPath.Location = new Point(139, 58);
-            textBoxAppPath.Margin = new Padding(4, 5, 4, 5);
+            textBoxAppPath.Location = new Point(97, 35);
             textBoxAppPath.Name = "textBoxAppPath";
-            textBoxAppPath.Size = new Size(265, 31);
+            textBoxAppPath.Size = new Size(189, 23);
             textBoxAppPath.TabIndex = 0;
             // 
             // labelAppPath
             // 
             labelAppPath.AutoSize = true;
-            labelAppPath.Location = new Point(33, 61);
-            labelAppPath.Margin = new Padding(4, 0, 4, 0);
+            labelAppPath.Location = new Point(23, 37);
             labelAppPath.Name = "labelAppPath";
-            labelAppPath.Size = new Size(89, 25);
+            labelAppPath.Size = new Size(59, 15);
             labelAppPath.TabIndex = 7;
             labelAppPath.Text = "App Path:";
             // 
@@ -126,27 +123,30 @@
             // 
             labelRomDescription.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             labelRomDescription.BorderStyle = BorderStyle.FixedSingle;
-            labelRomDescription.Location = new Point(33, 204);
+            labelRomDescription.Location = new Point(23, 122);
+            labelRomDescription.Margin = new Padding(2, 0, 2, 0);
             labelRomDescription.Name = "labelRomDescription";
-            labelRomDescription.Size = new Size(531, 277);
+            labelRomDescription.Size = new Size(355, 178);
             labelRomDescription.TabIndex = 6;
             labelRomDescription.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // labelSettings
             // 
             labelSettings.AutoSize = true;
-            labelSettings.Location = new Point(25, 19);
+            labelSettings.Location = new Point(18, 11);
+            labelSettings.Margin = new Padding(2, 0, 2, 0);
             labelSettings.Name = "labelSettings";
-            labelSettings.Size = new Size(76, 25);
+            labelSettings.Size = new Size(49, 15);
             labelSettings.TabIndex = 5;
             labelSettings.Text = "Settings";
             // 
             // buttonSaveSettings
             // 
             buttonSaveSettings.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            buttonSaveSettings.Location = new Point(370, 143);
+            buttonSaveSettings.Location = new Point(262, 78);
+            buttonSaveSettings.Margin = new Padding(2, 2, 2, 2);
             buttonSaveSettings.Name = "buttonSaveSettings";
-            buttonSaveSettings.Size = new Size(165, 34);
+            buttonSaveSettings.Size = new Size(116, 28);
             buttonSaveSettings.TabIndex = 4;
             buttonSaveSettings.Text = "Save as Default";
             buttonSaveSettings.UseVisualStyleBackColor = true;
@@ -156,9 +156,10 @@
             // 
             checkBoxFullscreen.AutoSize = true;
             checkBoxFullscreen.CheckAlign = ContentAlignment.MiddleRight;
-            checkBoxFullscreen.Location = new Point(33, 148);
+            checkBoxFullscreen.Location = new Point(23, 89);
+            checkBoxFullscreen.Margin = new Padding(2, 2, 2, 2);
             checkBoxFullscreen.Name = "checkBoxFullscreen";
-            checkBoxFullscreen.Size = new Size(119, 29);
+            checkBoxFullscreen.Size = new Size(82, 19);
             checkBoxFullscreen.TabIndex = 3;
             checkBoxFullscreen.Text = "Fullscreen:";
             checkBoxFullscreen.UseVisualStyleBackColor = true;
@@ -168,27 +169,28 @@
             comboBoxResolution.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             comboBoxResolution.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBoxResolution.FormattingEnabled = true;
-            comboBoxResolution.Location = new Point(138, 101);
+            comboBoxResolution.Location = new Point(97, 61);
+            comboBoxResolution.Margin = new Padding(2, 2, 2, 2);
             comboBoxResolution.Name = "comboBoxResolution";
-            comboBoxResolution.Size = new Size(118, 33);
+            comboBoxResolution.Size = new Size(86, 23);
             comboBoxResolution.TabIndex = 2;
             // 
             // labelResolution
             // 
             labelResolution.AutoSize = true;
-            labelResolution.Location = new Point(33, 101);
+            labelResolution.Location = new Point(23, 61);
+            labelResolution.Margin = new Padding(2, 0, 2, 0);
             labelResolution.Name = "labelResolution";
-            labelResolution.Size = new Size(99, 25);
+            labelResolution.Size = new Size(66, 15);
             labelResolution.TabIndex = 1;
             labelResolution.Text = "Resolution:";
             // 
             // buttonRunRom
             // 
             buttonRunRom.Anchor = AnchorStyles.Bottom;
-            buttonRunRom.Location = new Point(231, 543);
-            buttonRunRom.Margin = new Padding(4, 5, 4, 5);
+            buttonRunRom.Location = new Point(163, 337);
             buttonRunRom.Name = "buttonRunRom";
-            buttonRunRom.Size = new Size(124, 97);
+            buttonRunRom.Size = new Size(87, 58);
             buttonRunRom.TabIndex = 5;
             buttonRunRom.Text = "Run Rom";
             buttonRunRom.UseVisualStyleBackColor = true;
@@ -196,12 +198,11 @@
             // 
             // MainForm
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(861, 739);
+            ClientSize = new Size(607, 454);
             Controls.Add(splitContainer1);
-            Margin = new Padding(4, 5, 4, 5);
-            MinimumSize = new Size(883, 795);
+            MinimumSize = new Size(623, 493);
             Name = "MainForm";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "SuperModel UI";

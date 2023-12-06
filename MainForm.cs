@@ -244,7 +244,7 @@ namespace Supermodel.UI
                 }
 
                 var rom = _romToRun.Replace(".zip", "");
-               
+
                 var game = games.GameList.Where(x => x.Name.Contains(rom) || x.Parent.Contains(rom)).FirstOrDefault();
 
                 if (game != null)
