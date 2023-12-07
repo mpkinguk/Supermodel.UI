@@ -94,7 +94,7 @@
             // 
             buttonBrowseAppPath.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             buttonBrowseAppPath.Location = new Point(291, 33);
-            buttonBrowseAppPath.Margin = new Padding(2, 2, 2, 2);
+            buttonBrowseAppPath.Margin = new Padding(2);
             buttonBrowseAppPath.Name = "buttonBrowseAppPath";
             buttonBrowseAppPath.Size = new Size(87, 25);
             buttonBrowseAppPath.TabIndex = 1;
@@ -144,7 +144,7 @@
             // 
             buttonSaveSettings.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             buttonSaveSettings.Location = new Point(262, 78);
-            buttonSaveSettings.Margin = new Padding(2, 2, 2, 2);
+            buttonSaveSettings.Margin = new Padding(2);
             buttonSaveSettings.Name = "buttonSaveSettings";
             buttonSaveSettings.Size = new Size(116, 28);
             buttonSaveSettings.TabIndex = 4;
@@ -157,7 +157,7 @@
             checkBoxFullscreen.AutoSize = true;
             checkBoxFullscreen.CheckAlign = ContentAlignment.MiddleRight;
             checkBoxFullscreen.Location = new Point(23, 89);
-            checkBoxFullscreen.Margin = new Padding(2, 2, 2, 2);
+            checkBoxFullscreen.Margin = new Padding(2);
             checkBoxFullscreen.Name = "checkBoxFullscreen";
             checkBoxFullscreen.Size = new Size(82, 19);
             checkBoxFullscreen.TabIndex = 3;
@@ -170,7 +170,7 @@
             comboBoxResolution.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBoxResolution.FormattingEnabled = true;
             comboBoxResolution.Location = new Point(97, 61);
-            comboBoxResolution.Margin = new Padding(2, 2, 2, 2);
+            comboBoxResolution.Margin = new Padding(2);
             comboBoxResolution.Name = "comboBoxResolution";
             comboBoxResolution.Size = new Size(86, 23);
             comboBoxResolution.TabIndex = 2;
@@ -178,7 +178,7 @@
             // labelResolution
             // 
             labelResolution.AutoSize = true;
-            labelResolution.Location = new Point(23, 61);
+            labelResolution.Location = new Point(23, 64);
             labelResolution.Margin = new Padding(2, 0, 2, 0);
             labelResolution.Name = "labelResolution";
             labelResolution.Size = new Size(66, 15);
